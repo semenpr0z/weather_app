@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="box">
+            <form>
+                <input type="search" id="searchInput" placeholder="Введите город" />
+                <div>
+                    <button type="submit" class="btn" id="button">Узнать погоду</button>
+                    <button type="submit" class="btn btn-current" id="currentLocation">
+                        Текущее Местоположение
+                    </button>
+                </div>
+            </form>
+            <h1 id="city"></h1>
+            <p class="date" id="now"></p>
+            <div class="meteo">
+                <div class="today">
+                    <h2></h2>
+                    <div class="row-temp">
+                        <p class="temperature" id="temp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
