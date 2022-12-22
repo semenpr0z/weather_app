@@ -41,7 +41,7 @@ function changeCity(event) {
             console.error(error);
 
             let tempValue = document.querySelector("#temp");
-            tempValue.innerHTML = `Ошибка, дорогой пользователь, проверь свой код!`;
+            tempValue.innerHTML = `Ошибка, дорогой пользователь, вы ничего не написали!`;
         });
 }
 
@@ -59,13 +59,12 @@ function getCurrentPosition(event) {
         fetch(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`)
         .then((response) => response.json())
         .then((response) => {
-            console.log(response);
-
+            //console.log(response);
             let tempValue = document.querySelector("#temp");
             tempValue.innerHTML = `${response.main.temp} ºC`;
 
             let city = document.querySelector("#city");
-            city.innerHTML = "Current Location";
+            city.innerHTML = `${response.name}`;
         })
         .catch((error) => {
             console.error(error);

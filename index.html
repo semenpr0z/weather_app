@@ -10,17 +10,18 @@
 <body>
     <div>
         <div class="box">
-            <form>
-                <input type="search" id="searchInput" placeholder="Введите город" />
-                <div>
-                    <button type="submit" class="btn" id="button">Узнать погоду</button>
-                    <button type="submit" class="btn btn-current" id="currentLocation">
+            <form class="form">
+                <div class="serch_button">
+                    <input class="input_search" type="search" id="searchInput" placeholder="Введите город" />
+                    <button type="submit" class="btn size1" id="button"> <span style="font-family: 'Fjalla One', sans-serif;">Узнать погоду</span></button>
+                    <button type="submit" class="btn size2 btn-current" id="currentLocation">
                         Текущее Местоположение
                     </button>
                 </div>
+                <p class="date" id="now"></p>
             </form>
-            <h1 id="city"></h1>
-            <p class="date" id="now"></p>
+            <h2 id="city" class="city"></h1>
+            
             <div class="meteo">
                 <div class="today">
                     <h2></h2>
